@@ -25,7 +25,7 @@ acc_desc = [
     "Verify semantic focus order for input fields",
     "Verify screen reader hints on floating action button"
 ]
-generate_file("test_read_only_accessibility.py", "accessibility_check", 50, acc_desc)
+generate_file("test_accessibility.py", "accessibility_check", 50, acc_desc)
 
 # Localization
 loc_desc = [
@@ -35,7 +35,7 @@ loc_desc = [
     "Verify currency symbol localization based on region",
     "Verify fallback language text is not visible"
 ]
-generate_file("test_read_only_localization.py", "localization_string", 50, loc_desc)
+generate_file("test_localization.py", "localization_string", 50, loc_desc)
 
 # Empty States
 emp_desc = [
@@ -45,7 +45,7 @@ emp_desc = [
     "Verify empty state layout bounds do not overflow",
     "Verify placeholder skeleton loader semantics"
 ]
-generate_file("test_read_only_empty_states.py", "empty_state", 40, emp_desc)
+generate_file("test_empty_states.py", "empty_state", 40, emp_desc)
 
 # Navigation
 nav_desc = [
@@ -55,7 +55,7 @@ nav_desc = [
     "Verify tab bar state matches active screen",
     "Verify hero animation source and destination bounds"
 ]
-generate_file("test_read_only_navigation.py", "navigation_flow", 40, nav_desc)
+generate_file("test_navigation.py", "navigation_flow", 40, nav_desc)
 
 # Layout
 lay_desc = [
@@ -65,6 +65,6 @@ lay_desc = [
     "Verify scroll view bounds limits",
     "Verify floating action button margin specifications"
 ]
-generate_file("test_read_only_layout.py", "layout_boundary", 20, lay_desc)
+generate_file("test_layout.py", "layout_boundary", 20, lay_desc)
 
 print("Generated 200 new read-only test cases successfully.")
